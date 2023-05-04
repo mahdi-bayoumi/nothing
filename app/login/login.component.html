@@ -1,0 +1,48 @@
+<section class="h-100 background">
+    <div class="container h-100">
+        <div class="row justify-content-sm-center h-100">
+            <div class="col-xxl-4 col-xl-5 col-lg-5 col-md-7 col-sm-9">
+                
+                <div class="card shadow-lg">
+                    <div class="text-center my-5">
+                        <img src="../../assets/profile.png" alt="logo" width="100">
+                    </div>
+                    <div class="card-body p-5">
+                        <h1 class="fs-4 card-title fw-bold mb-4">Login</h1>
+                        <form [formGroup]="loginForm" novalidate class="form">
+                            <div class="mb-3">
+                                <label class="mb-2 text-muted" for="email">E-Mail Address</label>
+                                <input id="email" type="email" class="form-control" name="email"  formControlName="email" #email>
+                                
+                            </div>
+
+                            <div class="mb-3">
+                                <div class="mb-2 w-100">
+                                    <label class="text-muted" for="password">Password</label>
+                                    <a class="float-end">
+                                        Forgot Password?
+                                    </a>
+                                </div>
+                                <input id="password" type="password" class="form-control" name="password" formControlName="password" >
+                               
+                            </div>
+
+                            <div class="d-flex align-items-center">
+                               
+                                <button type="submit" class="btn btn-primary ms-auto" (click)="onclicklogin(email.value)">
+                                    Login
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="card-footer py-3 border-0">
+                        <div class="text-center">
+                            Don't have an account? <a  routerLink="/register" routerLinkActive="active" class="text-dark">Create One</a>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</section>

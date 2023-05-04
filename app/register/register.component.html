@@ -1,0 +1,79 @@
+<section class="h-100 background">
+    <div class="container h-100">
+        <div class="row justify-content-sm-center h-100">
+            <div class="col-xxl-4 col-xl-5 col-lg-5 col-md-7 col-sm-9">
+
+
+                
+
+
+                <div class="card shadow-lg">
+                    <div class="text-center my-5">
+                        <img src="../../assets/profile.png" alt="logo" width="100">
+                    </div>
+                    <div class="card-body p-5">
+                        <h1 class="fs-4 card-title fw-bold mb-4">Register</h1>
+
+
+                        <form [formGroup]="adduForm" novalidate class="form">
+                            <div class="mb-3">
+                                <label class="mb-2 text-muted" for="name">Name</label>
+                                <input type="text" class="form-control" formControlName="name" name="name">
+                                
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="mb-2 text-muted" for="email">E-Mail Address</label>
+                                <input  type="email" class="form-control" formControlName="email" name="email" >
+                                
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="mb-2 text-muted" for="password">Password</label>
+                                <input type="password" class="form-control" formControlName="password" name="password" >
+                                
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="mb-2 text-muted" for="mobile">Mobile</label>
+                                <input type="number" class="form-control" formControlName="mobile" name="mobile">
+                                
+                            </div>
+                            <div class="mb-3">
+                                <label class="mb-2 text-muted" for="title">Title</label>
+                                <input type="text" class="form-control" formControlName="title" name="title" >
+                                
+                            </div>
+                            <div class="mb-3">
+                                <label class="mb-2 text-muted" for="skills">Skills</label>
+                                <input  type="text" class="form-control" formControlName="skills" name="skills">
+                                
+                            </div>
+                            <div class="mb-3">
+                                <label class="mb-2 text-muted" for="experience">Experience</label>
+                                <input  type="text" class="form-control" formControlName="experience" name="experience">
+                                
+                            </div>
+
+                            <p class="form-text text-muted mb-3">
+                                By registering you agree with our terms and condition.
+                            </p>
+
+                            <div class="align-items-center d-flex">
+                                <button type="submit" class="btn btn-primary ms-auto" (click)="onSubmitaddu()">
+                                    Register	
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="card-footer py-3 border-0">
+                        <div class="text-center">
+                            Already have an account? <a routerLink="/login" routerLinkActive="active" class="text-dark" >Login</a>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</section>
